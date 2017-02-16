@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eerste javascript</title>
+	
+</head>
+
+<body>
+<h1> Alert box </h1>
+<div id="divNaam"></div>
+<button id="btnPrompt" onclick="toonPrompt();">Voer de code in</button>
+<div id="divResult"></div>
+
+<script>
+	alert('hello world - vanuit JavaScript');
+ 
+	function toonPrompt() {
+ 
+	var code = prompt ('vul uw promotiecode in','uw code');
+	var tekst = 'De code die u invoerde was: ' + code ;
+	document.getElementById('divResult').innerHTML = tekst;
+	}
+	
+	var voornaam = prompt ('vul hier uw voornaam in', 'Uw voornaam');
+	var achternaam = prompt ('vul hier uw achternaam in', 'Uw achternaam');
+	var tekst = 'Uw naam is: ' + voornaam+ ' '+achternaam ; 
+	document.getElementById('divNaam').innerHTML = tekst;
+</script>
+</body>
+</html>
